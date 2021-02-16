@@ -254,7 +254,6 @@ def drawCycloidalBodies(combineFeatures, app, xyPlane, sketches, extrudes, fixed
     
     # create the sketch for the cam, allowing for tolerances
     shaftHole = camCircles.addByCenterRadius(adsk.core.Point3D.create(0, 0, 0), shaftR - (tolerance))
-    # pinD*0.5
     offsetPin = camCircles.addByCenterRadius(adsk.core.Point3D.create(0, eccentricity, 0), centerpinR + tolerance) 
 
     # extrude the cam
